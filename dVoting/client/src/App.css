@@ -1,0 +1,142 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-image: url('./image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  height: 100vh; /* Ensure the body takes up the full height of the viewport */
+  margin: 0; /* Remove any default margin around the body */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+code {
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  background-color: rgba(241, 241, 241, 0.8); /* 80% opacity */
+  padding: 4px 8px;
+  font-size: 105%;
+  border-radius: 6px;
+  border: 1px solid rgba(241, 241, 241, 0.8); /* 80% opacity */
+}
+
+/* Main Container Styles */
+.container-main {
+  padding: 0.5%;
+  padding-left: 2%;padding-right: 2%;
+  margin: 20px auto;
+  background-color: rgba(222, 240, 250, 0.8); /* 80% opacity */
+  border-radius: 10px;
+  
+  max-width: 90%;
+}
+
+.container-item {
+  transition: all 0.3s ease;
+ /* 80% opacity */
+  border-radius: 10px;
+  
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.title {
+  text-transform: capitalize;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.container-list {
+  width: 100%;
+  padding: 15px;
+  margin: 5px auto;
+  background-color: rgba(222, 240, 250, 0.8);
+  border-radius: 8px;
+ 
+}
+
+.center-items {
+  display: grid;
+  place-items: center;
+}
+
+/* Media Queries for Responsiveness */
+@media all and (max-width: 1020px) {
+  .container-item {
+    max-width: 800px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .container-item {
+    max-width: 700px;
+    display: block;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .container-item {
+    max-width: 600px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .container-item {
+    max-width: 500px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .container-item {
+    max-width: 400px;
+    padding: 15px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .container-item {
+    max-width: 300px;
+    padding: 10px;
+  }
+}
+
+/* State Styles */
+.info,
+.attention,
+.alert,
+.success {
+  border: 1px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.info {
+  background-color: rgba(241, 241, 241, 0.8);
+}
+
+.attention {
+  background-color: rgba(241, 241, 241, 0.8);
+}
+
+.success {
+  /* background-color: rgba(241, 241, 241, 0.8); */
+}
+
+.alert {
+  background-color: #ffdede;
+}
